@@ -3,18 +3,30 @@ package com.github.agaklapacz.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "guest")
+@Table(name = "Guest")
 public class Guest {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "Guest_id")
     private long id;
+    @Column(name = "First_name")
     private String firstName;
+    @Column(name = "Last_name")
     private String lastName;
+    @Column(name = "Nationality")
+    private String Nationality;
+    @Column(name = "Email_address")
     private String emailAddress;
-    private String address;
-    private String country;
-    private String state;
+    @Column(name = "Phone_number")
     private String phoneNumber;
+
+    public String getNationality() {
+        return Nationality;
+    }
+
+    public void setNationality(String nationality) {
+        Nationality = nationality;
+    }
 
     public Guest() {
 
@@ -50,30 +62,6 @@ public class Guest {
 
     public void setEmailAddress(String emailAddress) {
         this.emailAddress = emailAddress;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
     }
 
     public String getPhoneNumber() {
