@@ -1,41 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-    <title>Room Reservations</title>
-
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-darkness/jquery-ui.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/site.css"/>
-
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms reservation</title>
+    <link rel="stylesheet" href="https://igoradamenko.github.io/awsm.css/css/awsm.min.css">
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="reservations"> Hotels - Reservations</a>
-        </div>
-    </div>
-</nav>
-<div class="container">
-    <div class="page-header">
-        <h1>Welcome to the Room Reservation center </h1>
-        <h2>Please click here to go to the reservation page</h2>
-        <a href="http://localhost:8080/reservations"> Click here </a>
-    </div>
-
-
-    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/site.js"></script>
-</div>
+<header>
+    <h1>-- HOTEL --</h1>
+    <p>Chose your room!</p>
+    <nav>
+        <ul>
+            <li>
+                <a href="/rooms">See all the rooms</a>
+            </li>
+            <li>
+                <a href="/reservations">See all the reservations</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 </body>
 </html>
